@@ -1,0 +1,26 @@
+{
+  "anuncios": [
+    {
+      "name": "Bicicleta",
+      "sale": true,
+      "price": 230.15,
+      "image": "bici.jpg",
+      "tags": [ "lifestyle", "motor"]
+    },
+    {
+      "name": "iPhone 3GS",
+      "sale": false,
+      "price": 50.00,
+      "image": "iphone.png",
+      "tags": [ "lifestyle", "mobile"]
+    }
+  ],
+
+  "usuarios": [
+    {
+      "name": "Administrador",
+      "email": "admin@nodepop.com",
+      "password": "1234"
+    }
+  ]
+}
