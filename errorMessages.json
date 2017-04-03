@@ -1,0 +1,8 @@
+{
+  "en": {
+    "ADV_FIND_ERROR": "Error fetching adverts"
+  },
+  "es": {
+    "ADV_FIND_ERROR": "Error al buscar anuncios"
+  }
+}
