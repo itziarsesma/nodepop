@@ -18,7 +18,6 @@
     "serve-favicon": "~2.3.2"
   },
   "description": "API para pagina de anuncios de compra venta",
-  "main": "app.js",
   "author": "Itziar Sesma Ullibarri",
   "license": "ISC"
 }
