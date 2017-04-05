@@ -15,7 +15,8 @@
     "mongodb": "^2.2.25",
     "mongoose": "^4.9.2",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.2"
+    "serve-favicon": "~2.3.2",
+    "sha256": "^0.2.0"
   },
   "description": "API para pagina de anuncios de compra venta",
   "author": "Itziar Sesma Ullibarri",

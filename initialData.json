@@ -21,6 +21,21 @@
       "name": "Administrador",
       "email": "admin@nodepop.com",
       "password": "1234"
+    },
+    {
+      "name": "Administrador2",
+      "email": "admin@nodepop.com",
+      "password": "12345"
+    },{
+      "name": "Administrador3",
+      "email": "admin@nodepop3.com",
+      "password": "1234"
+    },
+    {
+      "name": "Administrador4",
+      "email": "admin@nodepop4.com",
+      "password": "12345"
     }
+
   ]
 }

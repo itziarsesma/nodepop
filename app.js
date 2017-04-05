@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // API
 app.use('/apiv1/adverts', require('./routes/apiv1/adverts'));
+app.use('/apiv1/users', require('./routes/apiv1/users'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

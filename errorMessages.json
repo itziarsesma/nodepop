@@ -1,8 +1,14 @@
 {
   "en": {
-    "ADV_FIND_ERROR": "Error fetching adverts"
+    "ADV_FIND_ERROR": "Error fetching adverts",
+    "USR_ADD_ERROR": "Error adding new user",
+    "USR_DUPLICATE_KEY": "User already exists",
+    "USR_VALIDATION_ERR": "Complete all user data"
   },
   "es": {
-    "ADV_FIND_ERROR": "Error al buscar anuncios"
+    "ADV_FIND_ERROR": "Error al buscar anuncios",
+    "USR_ADD_ERROR": "Error al añadir un nuevo usuario",
+    "USR_DUPLICATE_KEY": "El usuario ya existe",
+    "USR_VALIDATION_ERR": "Introduce todos los datos del usuario"
   }
 }
