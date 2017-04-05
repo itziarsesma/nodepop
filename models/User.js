@@ -7,5 +7,6 @@ var userSchema = mongoose.Schema({
     email: String,
     password: String
 });
+userSchema.index({email: 1});
 
 var User = mongoose.model('User', userSchema);
