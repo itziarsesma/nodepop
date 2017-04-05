@@ -3,12 +3,18 @@
     "ADV_FIND_ERROR": "Error fetching adverts",
     "USR_ADD_ERROR": "Error adding new user",
     "USR_DUPLICATE_KEY": "User already exists",
-    "USR_VALIDATION_ERR": "Complete all user data"
+    "USR_VALIDATION_ERR": "Complete all user data",
+    "USR_NOT_FOUND": "User not found",
+    "USR_BAD_PWD": "Bad password",
+    "USR_SIGN_ERR": "User sign error"
   },
   "es": {
     "ADV_FIND_ERROR": "Error al buscar anuncios",
     "USR_ADD_ERROR": "Error al añadir un nuevo usuario",
     "USR_DUPLICATE_KEY": "El usuario ya existe",
-    "USR_VALIDATION_ERR": "Introduce todos los datos del usuario"
+    "USR_VALIDATION_ERR": "Introduce todos los datos del usuario",
+    "USR_NOT_FOUND": "Usuario no encontrado",
+    "USR_BAD_PWD": "Contraseña incorrecta",
+    "USR_SIGN_ERR": "Error al generar el token"
   }
 }
