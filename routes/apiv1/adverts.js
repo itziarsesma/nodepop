@@ -8,6 +8,9 @@ const customError = require('../../lib/customError');
 const mongoose = require('mongoose');
 const Advert = mongoose.model('Advert');
 
+const jwtAuth = require('../../lib/jwtAuth');
+router.use(jwtAuth);
+
 router.get('/', function(req, res, next) {
     const tag = req.query.tag;
     const sale = req.query.sale;
@@ -52,6 +55,15 @@ router.get('/', function(req, res, next) {
         res.json({sucess: true, adverts: rows});
     });
 
+});
+
+router.get('/tags', function(req, res, next) {
+    Advert.distinct('tags', function(err, tags) {
+        if(err) {
+            return customError(req, res, 'TAGS_FIND_ERROR');
+        }
+        res.json({sucess: true, tags});
+    });
 });
 
 module.exports = router;
