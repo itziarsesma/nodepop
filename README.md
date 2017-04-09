@@ -18,9 +18,9 @@ Petición POST
 http://localhost:3000/apiv1/users
 
 #### Parámetros:
-- name: campo de texto, requerido
-- password: campo de texto, requerido
-- email: campo de texto, requerido. No puede existir en la aplicacion otro usuario con este email.
+- name: campo de texto, **requerido**
+- password: campo de texto, **requerido**
+- email: campo de texto, **requerido**. No puede existir en la aplicacion otro usuario con este email.
 
 #### Devuleve:
 - El usuario creado
@@ -73,18 +73,18 @@ Petición GET
 http://localhost:3000/apiv1/adverts
 
 #### Parámentros:
-- token: campo de texto. Token válido generado al autenticar al usuario. Requerido
+- token: campo de texto. Token válido generado al autenticar al usuario. **Requerido**
 - tag: filtro por categoria http://localhost:3000/apiv1/adverts?tag=mobile
 - sale: filtro venta o busqueda http://localhost:3000/apiv1/adverts?sale=false
 - price: filtro precio 
-    -- Igual a un valor: http://localhost:3000/apiv1/adverts?price=50
-    -- Menor o igual a un valor: http://localhost:3000/apiv1/adverts?price=-50
-    -- Mayor o igual a un valor: http://localhost:3000/apiv1/adverts?price=10-
-    -- Entre dos valores: http://localhost:3000/apiv1/adverts?price=10-50
+    - Igual a un valor: http://localhost:3000/apiv1/adverts?price=50
+    - Menor o igual a un valor: http://localhost:3000/apiv1/adverts?price=-50
+    - Mayor o igual a un valor: http://localhost:3000/apiv1/adverts?price=10-
+    - Entre dos valores: http://localhost:3000/apiv1/adverts?price=10-50
 - name: el nombre del artículo empieza por los caracteres que indica este parámetro http://localhost:3000/apiv1/adverts?name=ip
 - sort: ordena los anuncios en funcion del campo que se indique en este parámetro
-    -- Orden ascendente: http://localhost:3000/apiv1/adverts?sort=sale
-    -- Orden descendente: http://localhost:3000/apiv1/adverts?sort=-sale
+    - Orden ascendente: http://localhost:3000/apiv1/adverts?sort=sale
+    - Orden descendente: http://localhost:3000/apiv1/adverts?sort=-sale
 - skip: Se salta el número de anuncios que se indican en este parámetro. Útil para la paginación. http://localhost:3000/apiv1/adverts?skip=2
 - limit: Devuelve como máximo el número de registros que se indican en este parámetro http://localhost:3000/apiv1/adverts?limit=2
 - fields: Devuelve los campos que se indiquen en este parámetro. Es necesario separar los campos por el caracter espacio. http://localhost:3000/apiv1/adverts?fields=name%20price
@@ -121,7 +121,7 @@ http://localhost:3000/apiv1/adverts
 Petición GET
 http://localhost:3000/apiv1/adverts/tags
 #### Parámentros:
-- token: campo de texto. Token válido generado al autenticar al usuario. Requerido
+- token: campo de texto. Token válido generado al autenticar al usuario. **Requerido**
 
 #### Devuelve:
 - Listado de anuncios
