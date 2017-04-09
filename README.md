@@ -127,7 +127,7 @@ http://localhost:3000/apiv1/adverts/tags
 - token: campo de texto. Token válido generado al autenticar al usuario. **Requerido**
 
 #### Devuelve:
-- Listado de anuncios
+- Listado de tags
 ```json
 {
   "sucess": true,
