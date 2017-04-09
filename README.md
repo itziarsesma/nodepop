@@ -141,3 +141,15 @@ http://localhost:3000/apiv1/adverts/tags
   "errorCode": "USR_INVALID_TOKEN",
   "errorDescription": "Invalid token"
 }
+
+### Imagenes
+Las imagenes de los anuncios están disponibles en la ruta http://localhost:3000/images/adverts/<nombre del recurso>, por ejemplo http://localhost:3000/images/adverts/bici.jpg
+
+## Internacionalización
+
+### Mensajes de error
+Los mensajes de eror de todas las peticiones a la api están disponibles en inglés o castellano. Para seleccionar el idioma es necesario incluir la cabecera 
+- {"Accept-Language":"en"} para los mensajes en inglés.
+- {"Accept-Language":"es"} para los mensajes en castellano. 
+
+Por defecto los mensajes se muestran en ingles.
