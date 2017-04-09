@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const express = require('express');
 const router = express.Router();
@@ -12,7 +12,7 @@ const config = require('../../localConfig');
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
 
-router.post("/", function(req, res, next) {
+router.post('/', function(req, res) {
     const name = req.body.name;
     const email = req.body.email;
     const password = req.body.password;
@@ -27,7 +27,7 @@ router.post("/", function(req, res, next) {
         if(err) {
             if (err.code === 11000) {
                 return customError(req, res, 'USR_DUPLICATE_KEY', 400);
-            } else if (err.name === "ValidationError") {
+            } else if (err.name === 'ValidationError') {
                 return customError(req, res, 'USR_VALIDATION_ERR', 400);
             } else {
                 return customError(req, res, 'USR_ADD_ERROR');
@@ -38,7 +38,7 @@ router.post("/", function(req, res, next) {
 
 });
 
-router.post("/authenticate", function(req, res, next) {
+router.post('/authenticate', function(req, res, next) {
     const email = req.body.email;
     const password = req.body.password;
 

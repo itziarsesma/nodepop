@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const mongoose = require('mongoose');
 
@@ -15,4 +15,4 @@ var userSchema = mongoose.Schema({
 });
 userSchema.index({email: 1}, { unique: true });
 
-var User = mongoose.model('User', userSchema);
+mongoose.model('User', userSchema);
