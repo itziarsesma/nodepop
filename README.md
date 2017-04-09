@@ -143,7 +143,7 @@ http://localhost:3000/apiv1/adverts/tags
 }
 
 ### Imagenes
-Las imagenes de los anuncios están disponibles en la ruta http://localhost:3000/images/adverts/<nombre del recurso>, por ejemplo http://localhost:3000/images/adverts/bici.jpg
+Las imagenes de los anuncios están disponibles en la ruta http://localhost:3000/images/adverts/[nombre del recurso], por ejemplo http://localhost:3000/images/adverts/bici.jpg
 
 ## Internacionalización
 
