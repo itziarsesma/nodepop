@@ -16,12 +16,15 @@ npm run installDB
 ### Crear un nuevo usuario
 Petición POST
 http://localhost:3000/apiv1/users
+
 Parámetros:
 - name: campo de texto, requerido
 - password: campo de texto, requerido
 - email: campo de texto, requerido. No puede existir en la aplicacion otro usuario con este email.
+
 Devuleve:
 - El usuario creado
+
 {
   "sucess": true,
   "user": {
@@ -33,6 +36,7 @@ Devuleve:
   }
 }
 - Un error en caso de que los datos introducidos no sean válidos.
+
 {
   "sucess": false,
   "errorCode": "USR_DUPLICATE_KEY",
@@ -42,16 +46,20 @@ Devuleve:
 ### Autenticar un usuario
 Petición POST
 http://localhost:3000/apiv1/users/authenticate
+
 Parámentros:
 - password: campo de texto
 - email: campo de texto
+
 Devuelve:
 - Un token válido por 2 horas
+
 {
   "success": true,
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Iml0emk0QG5vZGVwb3AuY29tIiwiaWF0IjoxNDkxNzUzNjU0LCJleHAiOjE0OTE3NjA4NTR9.kbPZll1VK5dhnfLCFJlQD1TZrfvvSnbJ3aZ8ek7veNg"
 }
 - Un error en caso de que los datos introducidos no sean válidos.
+
 {
   "sucess": false,
   "errorCode": "USR_BAD_PWD",
