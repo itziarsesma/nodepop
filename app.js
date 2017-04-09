@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 // database connection and models
-require('./lib/connectMongoose');
+require('./lib/connectMongoose').connect();
 require('./models/User');
 require('./models/Advert');
 

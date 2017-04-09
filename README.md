@@ -1,5 +1,8 @@
 # Nodepop
 
+## Descargar el proyecto del repositorio
+https://github.com/itziarsesma/nodepop.git
+
 ## Instalar dependencias
 npm install
 
