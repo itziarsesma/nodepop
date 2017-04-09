@@ -24,7 +24,7 @@ http://localhost:3000/apiv1/users
 
 #### Devuleve:
 - El usuario creado
-
+```json
 {
   "sucess": true,
   "user": {
@@ -35,14 +35,15 @@ http://localhost:3000/apiv1/users
     "_id": "58ea596649e20f04cc801012"
   }
 }
+```
 - Un error en caso de que los datos introducidos no sean válidos.
-
+```json
 {
   "sucess": false,
   "errorCode": "USR_DUPLICATE_KEY",
   "errorDescription": "El usuario ya existe"
 }
-
+```
 ### Autenticar un usuario
 Petición POST
 http://localhost:3000/apiv1/users/authenticate
@@ -53,19 +54,20 @@ http://localhost:3000/apiv1/users/authenticate
 
 #### Devuelve:
 - Un token válido por 2 horas
-
+```json
 {
   "success": true,
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Iml0emk0QG5vZGVwb3AuY29tIiwiaWF0IjoxNDkxNzUzNjU0LCJleHAiOjE0OTE3NjA4NTR9.kbPZll1VK5dhnfLCFJlQD1TZrfvvSnbJ3aZ8ek7veNg"
 }
+```
 - Un error en caso de que los datos introducidos no sean válidos.
-
+```json
 {
   "sucess": false,
   "errorCode": "USR_BAD_PWD",
   "errorDescription": "Contraseña incorrecta"
 }
-
+```
 ## API de anuncios
 
 ### Listado de anuncios
@@ -91,7 +93,7 @@ http://localhost:3000/apiv1/adverts
 
 #### Devuelve:
 - Listado de anuncios
-
+```json
 {
   "sucess": true,
   "adverts": [
@@ -109,14 +111,15 @@ http://localhost:3000/apiv1/adverts
     }
   ]
 }
+```
 - Un mensaje de error
-
+```json
 {
   "sucess": false,
   "errorCode": "USR_NO_TOKEN",
   "errorDescription": "No hay token"
 }
-
+```
 ### Listado de tags activos
 Petición GET
 http://localhost:3000/apiv1/adverts/tags
@@ -125,7 +128,7 @@ http://localhost:3000/apiv1/adverts/tags
 
 #### Devuelve:
 - Listado de anuncios
-
+```json
 {
   "sucess": true,
   "tags": [
@@ -134,14 +137,15 @@ http://localhost:3000/apiv1/adverts/tags
     "mobile"
   ]
 }
+```
 - Un mensaje de error
-
+```json
 {
   "sucess": false,
   "errorCode": "USR_INVALID_TOKEN",
   "errorDescription": "Invalid token"
 }
-
+```
 ### Imagenes
 Las imagenes de los anuncios están disponibles en la ruta http://localhost:3000/images/adverts/nombre_del_recurso, por ejemplo http://localhost:3000/images/adverts/bici.jpg
 
